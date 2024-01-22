@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GoogleDriveBrowser'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = ' Google Drive Browse and Download file (Objective C and Swift)'
 
 # This description is used to generate tags and improve search results.
@@ -29,15 +29,15 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/sourov2008/GoogleDriveBrowser.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'GoogleDriveBrowser/Classes/**/*'
   
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '11.0'
   
   s.static_framework = true
-  s.dependency 'GoogleAPIClientForREST/Drive', '~> 1.2.1'
-  s.dependency 'Google/SignIn', '~> 3.0.3'
+  s.dependency 'GoogleAPIClientForREST/Drive'
+  s.dependency 'GoogleSignIn'
   #s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Google/SignIn"}
 
     #s.resource_bundles = {
