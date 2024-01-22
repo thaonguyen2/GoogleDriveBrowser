@@ -189,7 +189,7 @@ didSignInForUser:(GIDGoogleUser *)user
     } else {
         [self.indicator startAnimating];
         self.signInButton.hidden = true;
-        self.service.authorizer = user.authentication.fetcherAuthorizer;
+        self.service.authorizer = user.fetcherAuthorizer;
         [self listFiles];
         
     }
@@ -207,10 +207,10 @@ didSignInForUser:(GIDGoogleUser *)user
         self.isSignOutSilently = NO;
     }
     
-    signIn.delegate = self;
-    signIn.uiDelegate = self;
-    signIn.scopes = [NSArray arrayWithObjects:kGTLRAuthScopeDriveReadonly, nil];
-    [signIn signInSilently];
+    //signIn.delegate = self;
+    //signIn.uiDelegate = self;
+    //signIn.scopes = [NSArray arrayWithObjects:kGTLRAuthScopeDriveReadonly, nil];
+    //[signIn signInSilently];
     
 }
 

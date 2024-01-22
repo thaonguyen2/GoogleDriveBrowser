@@ -16,7 +16,7 @@
 
 @protocol SDGDTableViewControllerDelegate;
 
-@interface SDGDTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource,GIDSignInDelegate, GIDSignInUIDelegate>
+@interface SDGDTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet id <SDGDTableViewControllerDelegate> delegate;
 
